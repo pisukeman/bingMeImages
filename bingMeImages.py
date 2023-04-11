@@ -98,4 +98,9 @@ for num in range(210, 7840,):
 
 #Or simply create something like:
 my_objects=['hubble images']
+
+#And then finally execute all the process with something like:
+# my_objects: the queries we want to send to Bing API
+# 200: the number of images we want to download for each query
+# 160: we want the images to be resized to 160x160 pixels
 createDataset(my_objects,200,"./ufo",160)
