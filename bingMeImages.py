@@ -53,7 +53,7 @@ def resizeImages(folder,cons_folder,size,ext):
         if image.endswith(".jpg") or image.endswith('.jpeg'):
             img = cv2.imread(cons_folder+image,1)
             print(cons_folder+image)
-            img = cv2.resize(img, (160, 160))
+            img = cv2.resize(img, (size, size))
             cv2.imwrite(resize_folder+image,img,[cv2.IMWRITE_JPEG_QUALITY, 100]) 
     return resize_folder
 
