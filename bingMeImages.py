@@ -50,7 +50,7 @@ def resizeImages(folder,cons_folder,size,ext):
     #shutil.rmtree(resize_folder)
    
     for image in listdir(cons_folder):
-        if image.endswith(".jpg") or image.endswith('.jpeg'):
+        if image.endswith(ext):
             img = cv2.imread(cons_folder+image,1)
             print(cons_folder+image)
             img = cv2.resize(img, (size, size))
